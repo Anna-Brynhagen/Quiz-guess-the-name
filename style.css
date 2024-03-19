@@ -1,0 +1,188 @@
+/* Mobile devices */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222725;
+    font-family: monospace;
+}
+
+#img {
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+#container {
+    background: #E4E6C3;
+    /* width: 90%; */
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 50px;
+    /* box-shadow: 10px 10px 15px #1b4c4f; */
+}
+
+#container h1 {
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 1px solid #222725;
+    padding-bottom: 20px;
+    color: #222725;
+    text-align: center;
+}
+#scoreResult {
+    color: #222725;
+}
+
+#quiz {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* center the buttons and place them under eachother */
+#answerBtnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #fff;
+    color: #F0805B;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #F0805B;
+    padding: 20px;
+    margin: 30px 10px 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:focus {
+    color: #222725;;
+}
+#indexQContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#indexQContainer button {
+    background-color: #F7F7F2;
+    color: #F0805B;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 55%;
+    border: 1px solid #F0805B;
+    padding: 20px;
+    margin: 30px 15px 0 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#indexQContainer button:hover {
+    background-color: #899878;
+    color: #222725;
+}
+
+#playBtn {
+    background-color: #F7F7F2;
+    color: #F0805B;
+    font-weight: 300;
+    width: 40%;
+    border: 0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #F0805B;
+}
+#playBtn:hover {
+    background-color: #899878;
+    color: #222725;
+}
+
+/* will use for buttons later */
+.correct {
+    background: #9aeabc;
+}
+
+.inCorrect {
+    background: #F0645A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MQ for tablets, small screens and laptops */
+@media screen and (min-width:751px) {
+    .btn {
+        width: 40%;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    #container h1 {
+        font-size: 25px;
+    }
+    #indexQContainer button {
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    #playBtn {
+        width: 30%;
+        font-size: 18px;
+    }
+    #indexQContainer button {
+        width: 35%;
+    }
+    #container {
+        max-width: 700px;
+    }
+}
+
+/* MQ for desktops, lager screens */
+@media screen and (min-width:961px) {
+    .btn {
+        width: 40%;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    #container h1 {
+        font-size: 25px;
+    }
+    #indexQContainer button {
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    #playBtn {
+        width: 25%;
+        font-size: 18px;
+    }
+    #indexQContainer button {
+        width: 35%;
+        font-size: 20px;
+    }
+    #container {
+        max-width: 750px;
+    }
+}
